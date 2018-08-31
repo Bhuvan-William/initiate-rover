@@ -1,5 +1,5 @@
 '''Where the magic happens but differently'''
-from Rover import Rover
+from ..Rover import Rover
 
 x = Rover()
 objects = x.get_objects()

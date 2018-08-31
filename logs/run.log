@@ -4,3 +4,370 @@
 2214 | Initiating rover
 2214 | About to construct socket with robot
 2214 | Bound rover socket: took 6.50882720947e-05s
+2235 | Initiating rover
+2236 | About to construct socket with robot
+2236 | Bound rover socket: took 6.89029693604e-05s
+2238 | Initiating rover
+2238 | About to construct socket with robot
+2238 | Bound rover socket: took 7.91549682617e-05s
+2238 | Initiating rover
+2238 | About to construct socket with robot
+2239 | Bound rover socket: took 9.29832458496e-05s
+2227 | Initiating rover
+2227 | About to construct socket with robot
+2228 | Bound rover socket: took 5.91278076172e-05s
+2238 | Initiating rover
+2238 | About to construct socket with robot
+2238 | Bound rover socket: took 7.10487365723e-05s
+2243 | Initiating rover
+2244 | About to construct socket with robot
+2244 | Bound rover socket: took 8.70227813721e-05s
+2236 | Initiating rover
+2236 | About to construct socket with robot
+2236 | Bound rover socket: took 6.50882720947e-05s
+2237 | Initiating rover
+2238 | About to construct socket with robot
+2238 | Bound rover socket: took 7.29560852051e-05s
+5477 | Initiating rover
+5477 | About to construct socket with robot
+5477 | Bound rover socket: took 3.71932983398e-05s
+2232 | Initiating rover
+2232 | About to construct socket with robot
+2233 | Bound rover socket: took 5.98430633545e-05s
+2201 | Initiating rover
+2201 | About to construct socket with robot
+2201 | Bound rover socket: took 6.103515625e-05s
+2241 | Initiating rover
+2241 | About to construct socket with robot
+2241 | Bound rover socket: took 5.88893890381e-05s
+2232 | Initiating rover
+2233 | About to construct socket with robot
+2233 | Bound rover socket: took 6.98566436768e-05s
+2239 | Initiating rover
+2240 | About to construct socket with robot
+2240 | Bound rover socket: took 5.00679016113e-05s
+2232 | Initiating rover
+2233 | About to construct socket with robot
+2233 | Bound rover socket: took 6.19888305664e-05s
+2206 | Initiating rover
+2206 | About to construct socket with robot
+2207 | Bound rover socket: took 5.88893890381e-05s
+2242 | Initiating rover
+2243 | About to construct socket with robot
+2243 | Bound rover socket: took 6.60419464111e-05s
+2236 | Initiating rover
+2237 | About to construct socket with robot
+2237 | Bound rover socket: took 6.29425048828e-05s
+2230 | Initiating rover
+2230 | About to construct socket with robot
+2230 | Bound rover socket: took 5.69820404053e-05s
+2238 | Initiating rover
+2239 | About to construct socket with robot
+2239 | Bound rover socket: took 5.91278076172e-05s
+2229 | Initiating rover
+2229 | About to construct socket with robot
+2229 | Bound rover socket: took 6.103515625e-05s
+2232 | Initiating rover
+2233 | About to construct socket with robot
+2233 | Bound rover socket: took 5.98430633545e-05s
+219 | Initiating rover
+220 | About to construct socket with robot
+220 | Bound rover socket: took 4.31537628174e-05s
+221 | GETTING OBJECTS
+1925 | Prepared for scanning
+1975 | Panned servo 2 degrees in 0.050173997879s
+3201 | GETTING COLORS
+3203 | Read image in 0.00162100791931s
+3372 | Converted image to hsv in 0.168925046921s
+249 | Initiating rover
+249 | About to construct socket with robot
+249 | Bound rover socket: took 4.38690185547e-05s
+250 | Reading thresholds.json
+251 | Read thresholds in 0.000612020492554s
+251 | GETTING OBJECTS
+1955 | Prepared for scanning
+2006 | Panned servo 2 degrees in 0.0504539012909s
+2897 | GETTING COLORS
+2899 | Read image in 0.00228691101074s
+2996 | Converted image to hsv in 0.0966591835022s
+3026 | Created masks for BLUE in 0.0293440818787s
+3057 | Simplified masks heavily in 0.0308001041412s
+3060 | Found contours in 0.0029079914093s
+3065 | Created masks for RED in 0.00524997711182s
+3071 | Simplified masks heavily in 0.00536394119263s
+3073 | Found contours in 0.00227189064026s
+3074 | Found largest contour
+3074 | Simplified contour heavily in 0.000500917434692s
+4156 | Panned servo 2 degrees in 0.0504860877991s
+4962 | GETTING COLORS
+4963 | Read image in 0.000861883163452s
+4967 | Converted image to hsv in 0.00393199920654s
+4970 | Created masks for BLUE in 0.00232195854187s
+4975 | Simplified masks heavily in 0.00460600852966s
+4976 | Found contours in 0.000875949859619s
+4981 | Created masks for RED in 0.00473999977112s
+4987 | Simplified masks heavily in 0.00573587417603s
+4988 | Found contours in 0.00130081176758s
+4988 | Found largest contour
+4988 | Simplified contour heavily in 3.40938568115e-05s
+6043 | Panned servo 2 degrees in 0.0501439571381s
+6959 | GETTING COLORS
+6959 | Read image in 0.000722169876099s
+6963 | Converted image to hsv in 0.00313186645508s
+6965 | Created masks for BLUE in 0.00210094451904s
+6969 | Simplified masks heavily in 0.00413489341736s
+6970 | Found contours in 0.000687837600708s
+6974 | Created masks for RED in 0.00409507751465s
+6979 | Simplified masks heavily in 0.00439405441284s
+6980 | Found contours in 0.00112295150757s
+6980 | Found largest contour
+6981 | Simplified contour heavily in 2.8133392334e-05s
+8036 | Panned servo 2 degrees in 0.0501699447632s
+8892 | GETTING COLORS
+8893 | Read image in 0.000921964645386s
+8897 | Converted image to hsv in 0.00320792198181s
+8900 | Created masks for BLUE in 0.00312614440918s
+8907 | Simplified masks heavily in 0.00632810592651s
+8907 | Found contours in 0.000788927078247s
+8912 | Created masks for RED in 0.00402593612671s
+8916 | Simplified masks heavily in 0.00412678718567s
+8917 | Found contours in 0.000970840454102s
+8917 | Found largest contour
+8917 | Simplified contour heavily in 2.50339508057e-05s
+9973 | Panned servo 2 degrees in 0.0504500865936s
+10899 | GETTING COLORS
+10900 | Read image in 0.000664949417114s
+10903 | Converted image to hsv in 0.00314998626709s
+10906 | Created masks for BLUE in 0.00210404396057s
+10911 | Simplified masks heavily in 0.00491499900818s
+10912 | Found contours in 0.000672817230225s
+10916 | Created masks for RED in 0.00433492660522s
+10921 | Simplified masks heavily in 0.00420904159546s
+10922 | Found contours in 0.00100302696228s
+10922 | Found largest contour
+10922 | Simplified contour heavily in 3.88622283936e-05s
+11977 | Panned servo 2 degrees in 0.0503358840942s
+12828 | GETTING COLORS
+12829 | Read image in 0.000620126724243s
+12832 | Converted image to hsv in 0.00328898429871s
+12834 | Created masks for BLUE in 0.00217294692993s
+12839 | Simplified masks heavily in 0.00495004653931s
+12840 | Found contours in 0.000696897506714s
+12847 | Created masks for RED in 0.00626683235168s
+12854 | Simplified masks heavily in 0.00709795951843s
+12855 | Found contours in 0.00117301940918s
+12855 | Found largest contour
+12856 | Simplified contour heavily in 1.78813934326e-05s
+13910 | Panned servo 2 degrees in 0.0506539344788s
+14802 | GETTING COLORS
+14802 | Read image in 0.00068187713623s
+14806 | Converted image to hsv in 0.003751039505s
+14810 | Created masks for BLUE in 0.00336384773254s
+14816 | Simplified masks heavily in 0.00601696968079s
+14817 | Found contours in 0.000675916671753s
+14821 | Created masks for RED in 0.00406098365784s
+14826 | Simplified masks heavily in 0.0043261051178s
+14827 | Found contours in 0.0011031627655s
+14827 | Found largest contour
+14827 | Simplified contour heavily in 1.50203704834e-05s
+15883 | Panned servo 2 degrees in 0.0504560470581s
+16768 | GETTING COLORS
+16768 | Read image in 0.000707149505615s
+16772 | Converted image to hsv in 0.00324606895447s
+16775 | Created masks for BLUE in 0.00353193283081s
+16782 | Simplified masks heavily in 0.0057520866394s
+16782 | Found contours in 0.000711917877197s
+16787 | Created masks for RED in 0.00484204292297s
+16792 | Simplified masks heavily in 0.00413799285889s
+16793 | Found contours in 0.000847101211548s
+16793 | Found largest contour
+16793 | Simplified contour heavily in 1.90734863281e-05s
+18504 | Calculated distance and co-ordinates of RED object in 0.000148057937622s
+18555 | Panned servo 2 degrees in 0.050528049469s
+19455 | GETTING COLORS
+19455 | Read image in 0.00062084197998s
+19459 | Converted image to hsv in 0.00318384170532s
+19462 | Created masks for BLUE in 0.00344681739807s
+19468 | Simplified masks heavily in 0.00540590286255s
+19469 | Found contours in 0.00070595741272s
+19474 | Created masks for RED in 0.00462794303894s
+19478 | Simplified masks heavily in 0.00440382957458s
+19480 | Found contours in 0.00119495391846s
+19480 | Found largest contour
+19480 | Simplified contour heavily in 2.90870666504e-05s
+21193 | Calculated distance and co-ordinates of RED object in 0.000144958496094s
+21243 | Panned servo 2 degrees in 0.0504438877106s
+22123 | GETTING COLORS
+22124 | Read image in 0.000750064849854s
+22128 | Converted image to hsv in 0.00329899787903s
+22131 | Created masks for BLUE in 0.00274395942688s
+22136 | Simplified masks heavily in 0.00481700897217s
+22137 | Found contours in 0.00064492225647s
+22141 | Created masks for RED in 0.00462412834167s
+22146 | Simplified masks heavily in 0.004390001297s
+22147 | Found contours in 0.00106406211853s
+22147 | Found largest contour
+22147 | Simplified contour heavily in 3.09944152832e-05s
+23204 | Panned servo 2 degrees in 0.0505409240723s
+24126 | GETTING COLORS
+24127 | Read image in 0.000696182250977s
+24131 | Converted image to hsv in 0.0040271282196s
+24134 | Created masks for BLUE in 0.00327897071838s
+24139 | Simplified masks heavily in 0.0047459602356s
+24140 | Found contours in 0.000670909881592s
+24145 | Created masks for RED in 0.00431489944458s
+24149 | Simplified masks heavily in 0.00423002243042s
+24150 | Found contours in 0.000815868377686s
+24150 | Found largest contour
+24150 | Simplified contour heavily in 1.90734863281e-05s
+25205 | Panned servo 2 degrees in 0.0504899024963s
+26034 | GETTING COLORS
+26035 | Read image in 0.000597953796387s
+26038 | Converted image to hsv in 0.00318479537964s
+26042 | Created masks for BLUE in 0.00358891487122s
+26048 | Simplified masks heavily in 0.00634908676147s
+26049 | Found contours in 0.000709056854248s
+26054 | Created masks for RED in 0.00462293624878s
+26059 | Simplified masks heavily in 0.00436115264893s
+26059 | Found contours in 0.000771999359131s
+26060 | Found largest contour
+26060 | Simplified contour heavily in 1.90734863281e-05s
+27114 | Panned servo 2 degrees in 0.0506250858307s
+27926 | GETTING COLORS
+27927 | Read image in 0.00069522857666s
+27930 | Converted image to hsv in 0.00314903259277s
+27932 | Created masks for BLUE in 0.00205492973328s
+27936 | Simplified masks heavily in 0.004065990448s
+27937 | Found contours in 0.000643968582153s
+27941 | Created masks for RED in 0.00406289100647s
+27946 | Simplified masks heavily in 0.0042359828949s
+27947 | Found contours in 0.000740051269531s
+27947 | Found largest contour
+27947 | Simplified contour heavily in 1.78813934326e-05s
+29002 | Panned servo 2 degrees in 0.0504779815674s
+29776 | GETTING COLORS
+29777 | Read image in 0.00075101852417s
+29780 | Converted image to hsv in 0.00317001342773s
+29783 | Created masks for BLUE in 0.00285887718201s
+29788 | Simplified masks heavily in 0.00482106208801s
+29789 | Found contours in 0.000663995742798s
+29793 | Created masks for RED in 0.004065990448s
+29798 | Simplified masks heavily in 0.00435090065002s
+29799 | Found contours in 0.000758171081543s
+29799 | Found largest contour
+29799 | Simplified contour heavily in 1.19209289551e-05s
+30854 | Panned servo 2 degrees in 0.0504901409149s
+31672 | GETTING COLORS
+31672 | Read image in 0.000674962997437s
+31676 | Converted image to hsv in 0.00325489044189s
+31679 | Created masks for BLUE in 0.00353193283081s
+31685 | Simplified masks heavily in 0.00512385368347s
+31686 | Found contours in 0.000656127929688s
+31690 | Created masks for RED in 0.00458717346191s
+31695 | Simplified masks heavily in 0.00418281555176s
+31696 | Found contours in 0.000705003738403s
+32752 | Panned servo 2 degrees in 0.0504639148712s
+33535 | GETTING COLORS
+33536 | Read image in 0.000734090805054s
+33540 | Converted image to hsv in 0.00373220443726s
+33543 | Created masks for BLUE in 0.002681016922s
+33548 | Simplified masks heavily in 0.00505995750427s
+33549 | Found contours in 0.000823974609375s
+33553 | Created masks for RED in 0.0041491985321s
+33561 | Simplified masks heavily in 0.00759100914001s
+33562 | Found contours in 0.000813961029053s
+34618 | Panned servo 2 degrees in 0.0504682064056s
+35412 | GETTING COLORS
+35413 | Read image in 0.000697135925293s
+35416 | Converted image to hsv in 0.00322699546814s
+35418 | Created masks for BLUE in 0.00206995010376s
+35423 | Simplified masks heavily in 0.00472497940063s
+35424 | Found contours in 0.000646114349365s
+35429 | Created masks for RED in 0.00453305244446s
+35433 | Simplified masks heavily in 0.00429511070251s
+35434 | Found contours in 0.00062084197998s
+36489 | Panned servo 2 degrees in 0.0501499176025s
+37332 | GETTING COLORS
+37333 | Read image in 0.000617027282715s
+37336 | Converted image to hsv in 0.00320291519165s
+37339 | Created masks for BLUE in 0.00288891792297s
+37344 | Simplified masks heavily in 0.0047721862793s
+37345 | Found contours in 0.000653028488159s
+37349 | Created masks for RED in 0.0040910243988s
+37353 | Simplified masks heavily in 0.00415396690369s
+37354 | Found contours in 0.000635147094727s
+38409 | Panned servo 2 degrees in 0.0504679679871s
+39272 | GETTING COLORS
+39273 | Read image in 0.00061297416687s
+39276 | Converted image to hsv in 0.00321698188782s
+39279 | Created masks for BLUE in 0.00218200683594s
+39283 | Simplified masks heavily in 0.00479888916016s
+39284 | Found contours in 0.000698804855347s
+39290 | Created masks for RED in 0.00539398193359s
+39296 | Simplified masks heavily in 0.00594615936279s
+39297 | Found contours in 0.000706195831299s
+40351 | Panned servo 2 degrees in 0.0501589775085s
+41204 | GETTING COLORS
+41205 | Read image in 0.00059986114502s
+41208 | Converted image to hsv in 0.00329685211182s
+41212 | Created masks for BLUE in 0.00349903106689s
+41217 | Simplified masks heavily in 0.00521397590637s
+41218 | Found contours in 0.00070595741272s
+41223 | Created masks for RED in 0.00453686714172s
+41228 | Simplified masks heavily in 0.00428986549377s
+41228 | Found contours in 0.000729084014893s
+42283 | Panned servo 2 degrees in 0.0504658222198s
+43187 | GETTING COLORS
+43188 | Read image in 0.000757217407227s
+43191 | Converted image to hsv in 0.00347089767456s
+43194 | Created masks for BLUE in 0.00209403038025s
+43198 | Simplified masks heavily in 0.00421500205994s
+43199 | Found contours in 0.000707149505615s
+43204 | Created masks for RED in 0.00463700294495s
+43211 | Simplified masks heavily in 0.00725889205933s
+43213 | Found contours in 0.00153017044067s
+43213 | Found largest contour
+43213 | Simplified contour heavily in 2.59876251221e-05s
+44269 | Panned servo 2 degrees in 0.0504338741302s
+45150 | GETTING COLORS
+45151 | Read image in 0.000715970993042s
+45155 | Converted image to hsv in 0.00355195999146s
+45157 | Created masks for BLUE in 0.00209403038025s
+45161 | Simplified masks heavily in 0.00406885147095s
+45162 | Found contours in 0.000711917877197s
+45167 | Created masks for RED in 0.00462198257446s
+45172 | Simplified masks heavily in 0.00469899177551s
+45174 | Found contours in 0.00163102149963s
+45174 | Found largest contour
+45174 | Simplified contour heavily in 2.90870666504e-05s
+46885 | Calculated distance and co-ordinates of RED object in 0.000205039978027s
+231 | Initiating rover
+231 | About to construct socket with robot
+231 | Bound rover socket: took 4.00543212891e-05s
+232 | Reading thresholds.json
+233 | Read thresholds in 0.000971078872681s
+233 | ALERTING RELEVANT CARS
+233 | GETTING COORDS
+233 | Asking ('172.16.80.132', 10004) aka Laptop_1 for its location
+233 | Asked all recipients for locations in 0.000123023986816s
+234 | Waiting for co-ordinates
+238 | Initiating rover
+238 | About to construct socket with robot
+239 | Bound rover socket: took 3.00407409668e-05s
+240 | Reading thresholds.json
+241 | Read thresholds in 0.000585079193115s
+241 | ALERTING RELEVANT CARS
+241 | GETTING COORDS
+241 | Asking ('172.16.80.132', 10004) aka Laptop_1 for its location
+241 | Asked all recipients for locations in 0.000169992446899s
+241 | Waiting for co-ordinates
+222 | Initiating rover
+222 | About to construct socket with robot
+223 | Bound rover socket: took 3.21865081787e-05s
+224 | Reading thresholds.json
+224 | Read thresholds in 0.000566959381104s
+224 | ALERTING RELEVANT CARS
+224 | GETTING COORDS
+225 | Asking ('172.16.80.132', 10004) aka Laptop_1 for its location
+225 | Asked all recipients for locations in 6.60419464111e-05s
+225 | Waiting for co-ordinates

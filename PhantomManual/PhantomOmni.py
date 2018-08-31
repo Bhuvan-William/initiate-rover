@@ -35,15 +35,12 @@ class PhantomOmni():
 
     @property
     def coords(self):
-        
-        print("begin")
         data = 0
         while True:
             try:
                 t = time()
                 data = self.q.get(block=False)
                 x = time()-t
-                print(x)
             except Queue.Empty:
                 if data != 0:
                     break
@@ -66,7 +63,6 @@ class PhantomOmni():
             except ValueError:
                 pass
         '''
-        print(data)
         parts = data.replace("\n", "").split(":")
         x = float(parts[0][1:])
         y = float(parts[1][1:])

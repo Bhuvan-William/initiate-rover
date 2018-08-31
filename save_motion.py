@@ -3,6 +3,13 @@ from PhantomOmni import PhantomOmni
 from time import sleep
 from tqdm import tqdm
 from Tkinter import Tk, Canvas, Label
+import sys
+
+filename = "/home/robot/Documents/save.txt"
+if len(sys.argv) > 1:
+    filename = sys.argv[1]
+
+
 
 #sets up tkinter window with canvas
 root = Tk()
@@ -56,7 +63,7 @@ while True:
         break
 
 #opens save file to write all recorded points to
-with open("/home/robot/Documents/save.txt", "w") as f:
+with open(filename, "w") as f:
     for move in tqdm(moves):
         formatted = []
 

@@ -53,6 +53,8 @@ float a = 0.025;
 float b = 1.332;
 float c = 0.235;
 
+int instruction = 1;
+
 
 bool stabilised = false;
 
@@ -97,7 +99,7 @@ HDCallbackCode HDCALLBACK FrictionlessPlaneCallback(void *data)
 	toz = atof(tozs);
 
 	if (oldtox != tox || oldtoy != toy || oldtoz != toz) {
-		//fprintf(stderr, "new instruction");
+		instruction += 1;
 	}
 	
 
@@ -125,7 +127,7 @@ HDCallbackCode HDCALLBACK FrictionlessPlaneCallback(void *data)
 	//const HDdouble kStiffness = a + b/(pow(2, (total/c)));
 	HDdouble kStiffness;
 	
-	if (total < 7) {
+	if (total < 7 || instruction < 5) {
 		kStiffness = 0.5;
 	}
 	else {
@@ -140,7 +142,7 @@ HDCallbackCode HDCALLBACK FrictionlessPlaneCallback(void *data)
 	
 	
 	
-	fprintf(stderr, "%f   %f\n", kStiffness, total);
+	//fprintf(stderr, "%f   %f\n", kStiffness, total);
 	
 
 	hdSetDoublev(HD_CURRENT_FORCE, force);

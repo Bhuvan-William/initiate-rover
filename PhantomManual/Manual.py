@@ -4,14 +4,14 @@ from PhantomOmni import PhantomOmni
 from time import sleep, time
 import cv2
 
-arm = PhantomOmni("plane")
+arm = PhantomOmni("forces")
 sleep(2)
 r = Rover()
 
 claw_open = True
 last_claw = True
 
-jolt_delay = 100
+jolt_delay = 1
 last_jolt_time = 0
 
 counter = 0
@@ -61,22 +61,23 @@ while True:
             claw_open = False
             if claw_open is not last_claw:
                 r.set_grip(0)
-
+        
         last_claw = claw_open
-
+        
         if arm.ink():
             motor1 = 0
             motor2 = 0
             sleep(0.5)
             arm.jolt()
             sleep(0.5)
-
-        if r.get_floor_data(0) < 100 or r.get_floor_data(1) < 100:
+        
+        if r.get_floor_data(0) < 300 or r.get_floor_data(1) < 300:
+            print(last_jolt_time + jolt_delay, time())
             if last_jolt_time + jolt_delay < time():
                 arm.jolt()
                 last_jolt_time = time()
+                print("jolted")
         
-        #print(motor1, motor2)
         r.set_motors(motor1, motor2)
         
     except KeyboardInterrupt:

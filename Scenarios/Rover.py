@@ -5,7 +5,7 @@ import sys
 sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 
 import logging
-logging.basicConfig(format="%(relativeCreated)d | %(message)s", filename="logs/run.log", level=logging.DEBUG)
+logging.basicConfig(format="%(relativeCreated)d | %(message)s", filename="../logs/run.log", level=logging.DEBUG)
 
 import socket
 import time
@@ -73,7 +73,7 @@ class Rover(object):
         
         logging.info("Reading thresholds.json")
         t = time.time()
-        with open("thresholds.json", "r") as file_obj:
+        with open("../thresholds.json", "r") as file_obj:
             self.thresholds = json.load(file_obj)
         logging.warning("Read thresholds in %ss", time.time()-t)
         
