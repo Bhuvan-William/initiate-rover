@@ -8,14 +8,14 @@ import psutil
 class PhantomOmni():
 
     #where to find the c scripts we wrote
-    SCRIPTS_FOLDER = "/home/robot/Downloads/openhaptics_3.4-0-developer-edition-amd64/opt/OpenHaptics/Developer/3.4-0/examples/HD/console/"
+    SCRIPTS_FOLDER = "/home/robot/Documents/server/home/rover/initiate/Phantom"
     SCRIPT_PATHS = {"plane" : "/FrictionlessPlane/;./FrictionlessPlane",
-                    "forces": "/forcepls/;./FrictionlessPlane", 
-                    "mouse" : "/mouse/;./FrictionlessPlane",
-                    "encoders" : "/record/;./Calibration",
-                    "playback" : "/testoos/;./FrictionlessPlane",
-                    "position" : "/bareValues/;./Calibration",
-                    "gravity" : "/gravity_mover/;./FrictionlessPlane"}
+                    "forces": "/Jolt/;./FrictionlessPlane", 
+                    "mouse" : "/Mouse/;./FrictionlessPlane",
+                    "encoders" : "/RecordEncoders/;./Calibration",
+                    "playback" : "/PlaybackEncoders/;./FrictionlessPlane",
+                    "position" : "/RawValues/;./Calibration",
+                    "gravity" : "/GravityMover/;./FrictionlessPlane"}
 
     def __init__(self, mode="mouse"):
         self.mode = mode
