@@ -104,7 +104,7 @@ class Rover(object):
                 logging.info("Co-ordinates received are %s", str(coords))
 
                 for color, obj in objects.items():
-                    if abs(coords[0] - obj[0]) + abs(coords[1] - obj[1]) < 40:
+                    if abs(coords[0] - obj[0]) + abs(coords[1] - obj[1]) < 100:
                         t = time.time()
                         logging.warning("Sending START command to %s about %s object", str(data[1]), color)
                         self.sock.sendto("!start:{}:{},{}:{}:".format(color, obj[0], obj[1], obj[2]), data[1])
