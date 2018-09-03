@@ -5,7 +5,7 @@ import sys
 sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 
 import logging
-logging.basicConfig(format="%(relativeCreated)d | %(message)s", filename="logs/run.log", level=logging.DEBUG)
+logging.basicConfig(format="%(relativeCreated)d | %(message)s", filename="/home/robot/Documents/server/home/rover/initiate/logs/run.log", level=logging.DEBUG)
 
 import socket
 import time
@@ -66,9 +66,9 @@ class Rover(object):
         self.eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
         self.dims = (640, 480)
-        self.center_tolerances = [self.dims[1]/2-200, self.dims[0]/2+200,
-                                  self.dims[1]/2+200, self.dims[0]/2-200]
-        self.edge_tolerances = [self.dims[0]/2 - 500, self.dims[0]/2 + 500]
+        self.center_tolerances = [self.dims[1]/2-40, self.dims[0]/2+40,
+                                  self.dims[1]/2+40, self.dims[0]/2-40]
+        self.edge_tolerances = [self.dims[0]/2 - 50, self.dims[0]/2 + 50]
         self.found_face = False
         
         logging.info("Reading thresholds.json")
@@ -296,14 +296,22 @@ class Rover(object):
             img = self.get_image()
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             faces = self.face_cascade.detectMultiScale(gray, 1.3, 5)
-
+            self.found_face = False
+            rect = []
             for (x_coord, y_coord, width, height) in faces:
+                self.found_face = True
                 cv2.rectangle(img, (x_coord, y_coord),
                               (x_coord+width, y_coord+height),
                               (255, 0, 0), 2
                              )
+                rect.append((x_coord, y_coord, width, height))
                 #roi_gray = gray[y:y+h, x_coord:x_coord+w]
                 #roi_color = img[y:y+h, x_coord:x_coord+w]
+            cv2.imshow("Face", img)
+            cv2.waitKey(10)
+            if len(rect) > 0:
+                self.follow(rect[0])
+            
 
     def follow(self, img):
         '''From an image, calculates and carries out what steps should be taken
@@ -315,28 +323,21 @@ class Rover(object):
         x_coord, y_coord, width, height = img
         center = (x_coord+width/2, y_coord+height/2)
 
-        if center[0] > self.edge_tolerances[1]:
-            self.edge_right()
-        elif center[0] < self.edge_tolerances[0]:
-            self.edge_left()
-        elif center[0] > self.center_tolerances[1] and self.pan_angle <= self.right_pan_limit:
-            self.pan_servo(self.pan_angle + self.angle_step)
-        elif center[0] < self.center_tolerances[3] and self.pan_angle >= self.left_pan_limit:
+        # if center[0] > self.edge_tolerances[1]:
+        #     self.edge_right()
+        # elif center[0] < self.edge_tolerances[0]:
+        #     self.edge_left()
+        if center[0] > self.center_tolerances[1] and self.pan_angle <= self.right_pan_limit:
             self.pan_servo(self.pan_angle - self.angle_step)
+        elif center[0] < self.center_tolerances[3] and self.pan_angle >= self.left_pan_limit:
+            self.pan_servo(self.pan_angle + self.angle_step)
 
         if center[1] > self.center_tolerances[2] and self.title_angle >= self.bottom_tilt_limit:
             self.tilt_servo(self.title_angle - self.angle_step)
         elif center[1] > self.center_tolerances[0] and self.title_angle <= self.top_tilt_limit:
             self.tilt_servo(self.title_angle + self.angle_step)
 
-        if width*height > 70000:
-            self.backwards()
-            sleep(0.75)
-            self.stop()
-        elif width*height < 60000:
-            self.forwards()
-            sleep(0.75)
-            self.stop()
+        print(self.title_angle)
 
     def set_pixel(self, led_id, hue, brightness):
         '''Set one of the leds on the rover with a hue and brightness'''

@@ -38,7 +38,7 @@ class Rover(object):
         self.rover_addr = ('172.16.80.185', 10000)
         self.graph_addr = ('172.16.80.145', 10001)
         self.recipients = {
-            ('172.16.80.132', 10004) : "Laptop_1"
+            ('172.16.80.130', 10004) : "Laptop_1"
         }
 
         self.coords = [0, 0]

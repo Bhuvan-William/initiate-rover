@@ -37,7 +37,7 @@ def mapValues(value, leftMin, leftMax, rightMin, rightMax):
 
 
 while True:
-    print("Running!")
+    print("Running!")ssh-keygen -f "/home/robot/.ssh/known_hosts" -R raspberrypi.local
     try:
         coords = arm.coords
         print(coords)
