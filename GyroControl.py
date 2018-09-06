@@ -34,9 +34,10 @@ while True:
             coords[0] = round(
                 mapValues(-values[0], -35, 35, LIMITS[0][0], LIMITS[0][1]), 3
             )
-            coords[1] = round(
-                mapValues(-values[2], -35, 35, LIMITS[1][0], LIMITS[1][1]), 3
-            )
+            # coords[1] = round(
+            #     mapValues(-values[2], -35, 35, LIMITS[1][0], LIMITS[1][1]), 3
+            # )
+            coords[1] = round(LIMITS[1][1], 3)
             print(coords)
             send_position(coords)
 

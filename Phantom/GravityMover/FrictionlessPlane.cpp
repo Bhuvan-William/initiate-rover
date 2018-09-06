@@ -127,6 +127,7 @@ HDCallbackCode HDCALLBACK FrictionlessPlaneCallback(void *data)
 	//const HDdouble kStiffness = a + b/(pow(2, (total/c)));
 	HDdouble kStiffness;
 	
+	
 	if (total < 7 || instruction < 5) {
 		kStiffness = 0.5;
 	}
