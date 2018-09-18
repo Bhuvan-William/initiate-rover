@@ -58,7 +58,7 @@ class Rover(object):
         self.left_pan_limit = -self.right_pan_limit
         self.top_tilt_limit = 80
         self.bottom_tilt_limit = -50
-        self.angle_step = 5
+        self.angle_step = 4
         self.pan_servo(0)
         self.tilt_servo(0)
 
@@ -66,13 +66,14 @@ class Rover(object):
         self.eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
         self.dims = (640, 480)
-        self.center_tolerances = [self.dims[1]/2-40, self.dims[0]/2+40,
-                                  self.dims[1]/2+40, self.dims[0]/2-40]
+        self.center_tolerances = [self.dims[1]/2+30, self.dims[0]/2+40,
+                                  self.dims[1]/2-30, self.dims[0]/2-40]
         self.edge_tolerances = [self.dims[0]/2 - 50, self.dims[0]/2 + 50]
         self.found_face = False
         
         logging.info("Reading thresholds.json")
         t = time.time()
+
         with open("thresholds.json", "r") as file_obj:
             self.thresholds = json.load(file_obj)
         logging.warning("Read thresholds in %ss", time.time()-t)
@@ -245,7 +246,8 @@ class Rover(object):
                 jpg = bytes[a:b+2]
                 bytes= bytes[b+2:]
                 i = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8), cv2.IMREAD_COLOR)
-                print(time.time()-x)
+                # print(time.time()-x)
+                time.sleep(0.3)
                 return i
         '''
         self.sock.sendto("Picture", self.rover_addr)
@@ -298,6 +300,7 @@ class Rover(object):
             faces = self.face_cascade.detectMultiScale(gray, 1.3, 5)
             self.found_face = False
             rect = []
+            
             for (x_coord, y_coord, width, height) in faces:
                 self.found_face = True
                 cv2.rectangle(img, (x_coord, y_coord),
@@ -307,6 +310,14 @@ class Rover(object):
                 rect.append((x_coord, y_coord, width, height))
                 #roi_gray = gray[y:y+h, x_coord:x_coord+w]
                 #roi_color = img[y:y+h, x_coord:x_coord+w]
+            cv2.rectangle(img, (self.center_tolerances[3], -5),
+                                (self.center_tolerances[1], self.dims[1]+5),
+                                (30, 0, 255), 2
+                                )
+            cv2.rectangle(img, (-5, self.center_tolerances[2]),
+                                (self.dims[0], self.center_tolerances[0]+5),
+                                (30, 0, 255), 2
+                                )
             cv2.imshow("Face", img)
             cv2.waitKey(10)
             if len(rect) > 0:
@@ -327,17 +338,21 @@ class Rover(object):
         #     self.edge_right()
         # elif center[0] < self.edge_tolerances[0]:
         #     self.edge_left()
-        if center[0] > self.center_tolerances[1] and self.pan_angle <= self.right_pan_limit:
-            self.pan_servo(self.pan_angle - self.angle_step)
-        elif center[0] < self.center_tolerances[3] and self.pan_angle >= self.left_pan_limit:
+        print(center[0], self.center_tolerances[1], self.center_tolerances[2])
+        if center[0] < self.center_tolerances[3] and self.pan_angle <= self.right_pan_limit:
             self.pan_servo(self.pan_angle + self.angle_step)
+        elif center[0] > self.center_tolerances[1] and self.pan_angle >= self.left_pan_limit:
+            self.pan_servo(self.pan_angle - self.angle_step)
 
-        if center[1] > self.center_tolerances[2] and self.title_angle >= self.bottom_tilt_limit:
-            self.tilt_servo(self.title_angle - self.angle_step)
-        elif center[1] > self.center_tolerances[0] and self.title_angle <= self.top_tilt_limit:
+        if center[1] < self.center_tolerances[2] and self.title_angle >= self.bottom_tilt_limit:
             self.tilt_servo(self.title_angle + self.angle_step)
+        elif center[1] > self.center_tolerances[0] and self.title_angle <= self.top_tilt_limit:
+            self.tilt_servo(self.title_angle - self.angle_step)
 
         print(self.title_angle)
+    
+    def followV2(self, image):
+        pass
 
     def set_pixel(self, led_id, hue, brightness):
         '''Set one of the leds on the rover with a hue and brightness'''
@@ -350,6 +365,7 @@ class Rover(object):
 
     def pan_servo(self, angle):
         '''Pans the servo (left and right) holding the camera and ultrasonic sensor'''
+        print("Pan")
         self.pan_angle = angle
         servo_params = ["ServoPan"]
         servo_params.append(angle)

@@ -300,3 +300,188 @@
 41436 | Received information from ('172.16.80.130', 10004) after 0.585958957672s
 41437 | Received image request after 0.586239814758s
 41437 | Waiting for image requests
+215 | Initiating rover
+215 | About to construct socket with robot
+216 | Bound rover socket: took 3.19480895996e-05s
+248 | Reading thresholds.json
+249 | Read thresholds in 0.000749826431274s
+252 | Initiating rover
+253 | About to construct socket with robot
+253 | Bound rover socket: took 4.19616699219e-05s
+287 | Reading thresholds.json
+288 | Read thresholds in 0.00129008293152s
+246 | Initiating rover
+246 | About to construct socket with robot
+246 | Bound rover socket: took 4.00543212891e-05s
+281 | Reading thresholds.json
+283 | Read thresholds in 0.00136303901672s
+223 | Initiating rover
+224 | About to construct socket with robot
+224 | Bound rover socket: took 4.88758087158e-05s
+257 | Reading thresholds.json
+258 | Read thresholds in 0.000504970550537s
+296 | Initiating rover
+296 | About to construct socket with robot
+297 | Bound rover socket: took 4.10079956055e-05s
+330 | Reading thresholds.json
+332 | Read thresholds in 0.00100708007812s
+258 | Initiating rover
+258 | About to construct socket with robot
+259 | Bound rover socket: took 4.10079956055e-05s
+294 | Reading thresholds.json
+295 | Read thresholds in 0.000641107559204s
+275 | Initiating rover
+275 | About to construct socket with robot
+275 | Bound rover socket: took 4.19616699219e-05s
+307 | Reading thresholds.json
+308 | Read thresholds in 0.000834941864014s
+263 | Initiating rover
+263 | About to construct socket with robot
+263 | Bound rover socket: took 4.60147857666e-05s
+298 | Reading thresholds.json
+298 | Read thresholds in 0.00076699256897s
+229 | Initiating rover
+230 | About to construct socket with robot
+230 | Bound rover socket: took 3.69548797607e-05s
+264 | Reading thresholds.json
+265 | Read thresholds in 0.00141406059265s
+264 | Initiating rover
+264 | About to construct socket with robot
+264 | Bound rover socket: took 3.71932983398e-05s
+301 | Reading thresholds.json
+302 | Read thresholds in 0.000864028930664s
+242 | Initiating rover
+242 | About to construct socket with robot
+243 | Bound rover socket: took 3.19480895996e-05s
+272 | Reading thresholds.json
+273 | Read thresholds in 0.000727891921997s
+256 | Initiating rover
+256 | About to construct socket with robot
+257 | Bound rover socket: took 4.38690185547e-05s
+291 | Reading thresholds.json
+292 | Read thresholds in 0.000694036483765s
+257 | Initiating rover
+257 | About to construct socket with robot
+257 | Bound rover socket: took 9.79900360107e-05s
+299 | Reading thresholds.json
+300 | Read thresholds in 0.000615835189819s
+261 | Initiating rover
+261 | About to construct socket with robot
+261 | Bound rover socket: took 4.10079956055e-05s
+302 | Reading thresholds.json
+303 | Read thresholds in 0.000830173492432s
+247 | Initiating rover
+248 | About to construct socket with robot
+248 | Bound rover socket: took 3.50475311279e-05s
+285 | Reading thresholds.json
+286 | Read thresholds in 0.000733137130737s
+242 | Initiating rover
+242 | About to construct socket with robot
+242 | Bound rover socket: took 3.48091125488e-05s
+272 | Reading thresholds.json
+273 | Read thresholds in 0.000730037689209s
+271 | Initiating rover
+271 | About to construct socket with robot
+271 | Bound rover socket: took 4.60147857666e-05s
+307 | Reading thresholds.json
+308 | Read thresholds in 0.000708103179932s
+258 | Initiating rover
+258 | About to construct socket with robot
+258 | Bound rover socket: took 4.50611114502e-05s
+294 | Reading thresholds.json
+295 | Read thresholds in 0.000895023345947s
+263 | Initiating rover
+263 | About to construct socket with robot
+263 | Bound rover socket: took 3.69548797607e-05s
+296 | Reading thresholds.json
+297 | Read thresholds in 0.000877141952515s
+254 | Initiating rover
+254 | About to construct socket with robot
+254 | Bound rover socket: took 4.6968460083e-05s
+287 | Reading thresholds.json
+288 | Read thresholds in 0.000648975372314s
+247 | Initiating rover
+247 | About to construct socket with robot
+247 | Bound rover socket: took 4.60147857666e-05s
+287 | Reading thresholds.json
+288 | Read thresholds in 0.000743865966797s
+223 | Initiating rover
+224 | About to construct socket with robot
+224 | Bound rover socket: took 4.29153442383e-05s
+259 | Reading thresholds.json
+260 | Read thresholds in 0.000487804412842s
+267 | Initiating rover
+267 | About to construct socket with robot
+267 | Bound rover socket: took 4.29153442383e-05s
+303 | Reading thresholds.json
+304 | Read thresholds in 0.000592947006226s
+296 | Initiating rover
+296 | About to construct socket with robot
+297 | Bound rover socket: took 4.38690185547e-05s
+330 | Reading thresholds.json
+331 | Read thresholds in 0.000601768493652s
+289 | Initiating rover
+289 | About to construct socket with robot
+289 | Bound rover socket: took 3.19480895996e-05s
+321 | Reading thresholds.json
+322 | Read thresholds in 0.000693082809448s
+312 | Initiating rover
+313 | About to construct socket with robot
+313 | Bound rover socket: took 4.41074371338e-05s
+350 | Reading thresholds.json
+352 | Read thresholds in 0.000919818878174s
+233 | Initiating rover
+234 | About to construct socket with robot
+234 | Bound rover socket: took 3.69548797607e-05s
+265 | Reading thresholds.json
+266 | Read thresholds in 0.00080394744873s
+262 | Initiating rover
+262 | About to construct socket with robot
+262 | Bound rover socket: took 4.50611114502e-05s
+300 | Reading thresholds.json
+301 | Read thresholds in 0.00062108039856s
+254 | Initiating rover
+254 | About to construct socket with robot
+255 | Bound rover socket: took 4.19616699219e-05s
+289 | Reading thresholds.json
+290 | Read thresholds in 0.000624179840088s
+241 | Initiating rover
+241 | About to construct socket with robot
+241 | Bound rover socket: took 5.60283660889e-05s
+279 | Reading thresholds.json
+280 | Read thresholds in 0.000777006149292s
+259 | Initiating rover
+259 | About to construct socket with robot
+259 | Bound rover socket: took 3.81469726562e-05s
+290 | Reading thresholds.json
+291 | Read thresholds in 0.000685930252075s
+259 | Initiating rover
+259 | About to construct socket with robot
+259 | Bound rover socket: took 3.38554382324e-05s
+304 | Reading thresholds.json
+305 | Read thresholds in 0.000728845596313s
+251 | Initiating rover
+251 | About to construct socket with robot
+251 | Bound rover socket: took 4.81605529785e-05s
+285 | Reading thresholds.json
+285 | Read thresholds in 0.00061297416687s
+267 | Initiating rover
+267 | About to construct socket with robot
+267 | Bound rover socket: took 4.88758087158e-05s
+300 | Reading thresholds.json
+301 | Read thresholds in 0.000777006149292s
+276 | Initiating rover
+276 | About to construct socket with robot
+276 | Bound rover socket: took 3.38554382324e-05s
+317 | Reading thresholds.json
+318 | Read thresholds in 0.000639915466309s
+245 | Initiating rover
+245 | About to construct socket with robot
+245 | Bound rover socket: took 3.19480895996e-05s
+276 | Reading thresholds.json
+277 | Read thresholds in 0.000684022903442s
+244 | Initiating rover
+244 | About to construct socket with robot
+244 | Bound rover socket: took 3.50475311279e-05s
+279 | Reading thresholds.json
+280 | Read thresholds in 0.000975131988525s
