@@ -58,7 +58,7 @@ class Rover(object):
         self.left_pan_limit = -self.right_pan_limit
         self.top_tilt_limit = 80
         self.bottom_tilt_limit = -50
-        self.angle_step = 4
+        self.angle_step = 2
         self.pan_servo(0)
         self.tilt_servo(0)
 
@@ -246,8 +246,8 @@ class Rover(object):
                 jpg = bytes[a:b+2]
                 bytes= bytes[b+2:]
                 i = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8), cv2.IMREAD_COLOR)
-                # print(time.time()-x)
-                time.sleep(0.3)
+                print(time.time()-x)
+                # time.sleep(0.3)
                 return i
         '''
         self.sock.sendto("Picture", self.rover_addr)
@@ -319,10 +319,10 @@ class Rover(object):
                                 (30, 0, 255), 2
                                 )
             cv2.imshow("Face", img)
-            cv2.waitKey(10)
+            cv2.waitKey(1)
             if len(rect) > 0:
                 self.follow(rect[0])
-            
+            dims[1]/2-3
 
     def follow(self, img):
         '''From an image, calculates and carries out what steps should be taken
@@ -338,7 +338,7 @@ class Rover(object):
         #     self.edge_right()
         # elif center[0] < self.edge_tolerances[0]:
         #     self.edge_left()
-        print(center[0], self.center_tolerances[1], self.center_tolerances[2])
+        # print(center[0], self.center_tolerances[1], self.center_tolerances[2])
         if center[0] < self.center_tolerances[3] and self.pan_angle <= self.right_pan_limit:
             self.pan_servo(self.pan_angle + self.angle_step)
         elif center[0] > self.center_tolerances[1] and self.pan_angle >= self.left_pan_limit:
@@ -349,7 +349,7 @@ class Rover(object):
         elif center[1] > self.center_tolerances[0] and self.title_angle <= self.top_tilt_limit:
             self.tilt_servo(self.title_angle - self.angle_step)
 
-        print(self.title_angle)
+        # print(self.title_angle)
     
     def followV2(self, image):
         pass
@@ -365,7 +365,7 @@ class Rover(object):
 
     def pan_servo(self, angle):
         '''Pans the servo (left and right) holding the camera and ultrasonic sensor'''
-        print("Pan")
+        
         self.pan_angle = angle
         servo_params = ["ServoPan"]
         servo_params.append(angle)
